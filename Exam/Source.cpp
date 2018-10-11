@@ -32,6 +32,6 @@ void main() {
 
 	//cout << "-----------------------------------" << endl;
 	//cout << Petr;
-
+    cout << "gnieifw;ngaeiufnbaveijvabenv;aieubt;pieasbtwgivhgbnsvlaietbveuilsgaehvi;";
 	system("pause");
 }
