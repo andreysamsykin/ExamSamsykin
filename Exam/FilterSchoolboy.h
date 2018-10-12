@@ -1,7 +1,8 @@
 #pragma once
+#include"Schoolboy.h"
 #include<vector>
 #include<algorithm>
-#include"Schoolboy.h"
+
 using namespace std;
 class FilterSchoolboy
 {
