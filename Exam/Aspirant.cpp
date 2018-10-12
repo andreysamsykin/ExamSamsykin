@@ -30,6 +30,19 @@ string Aspirant::GetThemeDisser()
 	return ThemeDisser;
 }
 
+Aspirant Aspirant::operator=(Aspirant & NewBoy)
+{
+
+    Aspirant::SetName(NewBoy.GetName());
+    Aspirant::SetEmail(NewBoy.GetEmail());
+    Aspirant::SetTeleph(NewBoy.GetTeleph());
+    Aspirant::SetVooz(NewBoy.GetVooz());
+    Aspirant::SetFaculty(NewBoy.GetFaculty());
+    Date = NewBoy.Date;
+    ThemeDisser = NewBoy.ThemeDisser;
+    return Aspirant();
+}
+
 void Aspirant::Show()
 {
 	Student::Show();

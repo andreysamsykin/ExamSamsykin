@@ -9,13 +9,13 @@ void main() {
 	//cout << "-----------------------------------" << endl;
 	
 	//cout << "Student: " << endl;
-    Student Petr;//("Petr Petrov","ksbel;","+965464665456","KhAI","RTSLA");
-	Student Ivan("Ivanius", "vlhadrjsvgai", "+38050504640654","Knoore","Pdkjv");
-	//Petr.Show();
+    Aspirant Petr("Petr Petrov","ksbel;","+965464665456", "Knoore", "Pdkjv","21.17.8796","Kotiki i sobachki loochie droozya");
+	//Student Ivan("Ivanius", "vlhadrjsvgai", "+38050504640654","Knoore","Pdkjv");
+	Petr.Show();
 	//cout << "-----------------------------------" << endl;
 
 	//cout << "Aspirant: " << endl;
-	//Aspirant Andrey("Andrey Andreev", "kgbwssbrbel;", "+5615694569", "KhAI", "RTSLA","12.25.2785","Samye vkoosnye chebooreki");
+	Aspirant Andrey("Andrey Andreev", "kgbwssbrbel;", "+5615694569", "KhAI", "RTSLA","12.25.2785","Samye vkoosnye chebooreki");
 	//Andrey.Show();
 	//cout << "-----------------------------------" << endl;
 
@@ -29,9 +29,10 @@ void main() {
 	cout << "-----------------------------------" << endl;
 	/*Petr.ShowSchoolboy();*/
 	//cout << (Petr == Ivan)<<endl;
-    cin >> Petr;
-    cout << Petr;
-
+   // cin >> Petr;
+    //cout << Petr;
+    Petr = Andrey;
+    Petr.Show();
 	//cout << "-----------------------------------" << endl;
 	//cout << Petr;
 

@@ -15,6 +15,8 @@ public:
 	void SetThemeDisser(const string AThemeDisser);
 	string GetThemeDisser();
 
+    Aspirant operator=(Aspirant& NewBoy);
+
 	void Show();
 
 	~Aspirant();
