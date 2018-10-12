@@ -2,9 +2,14 @@
 #include "Student.h"
 #include"Aspirant.h"
 #include <fstream>
+#include <vector>
 
 void main() {
-	/*Schoolboy Ivan("Ivanius","vlhadrjsvgai","+38050504640654");
+	/*
+    
+    -------------------------------------------------------------------------------œ–Œ¬≈– ¿ –¿¡Œ“€  À¿——Œ¬----------------------------------------------------------------------------------------------
+    
+    Schoolboy Ivan("Ivanius","vlhadrjsvgai","+38050504640654");
 	cout << "Schoolboy: " << endl;
 	Ivan.ShowSchoolboy();
 	cout << "-----------------------------------" << endl;
@@ -37,16 +42,43 @@ void main() {
    Petr.Show();
 	cout << "-----------------------------------" << endl;
 	cout << Petr;*/
+    
+    /*
+    -------------------------------------------------------------------œ–Œ¬≈– ¿ –¿¡Œ“€ «¿œ»—» ¬ ‘¿…À » ◊“≈Õ»ﬂ »« ‘¿…À¿--------------------------------------------------------------------------------------------
+
     Schoolboy Vasya;
     cin >> Vasya;
     cout << "_______________________________"<<endl;
-    ofstream fout("file.txt");
-    fout << Vasya;
-    fout.close();
+    try {
+        ofstream fout("file.txt");
+        if (!fout) {
+            throw 123;
+            }
+        fout << Vasya;
+        fout.close();
+    }
+
+    catch (int) {
+        cout << "ERROR OPENING FILE FOR WRITING!!!";
+    }
+
     cout << "_______________________________" << endl;
-    ifstream fin("file.txt");
-    fin >> Vasya;
-    fin.close();
-    cout << Vasya;
+    try {
+        ifstream fin("file.txt");
+        if (!fin) {
+            throw 12.1f;
+        }
+        fin >> Vasya;
+        fin.close();
+        cout << Vasya;
+    }
+
+    catch (float) {
+        cout << "ERROR OPENING FILE FOR READING!!!";
+    }
+    */
+
+
+
 	system("pause");
 }
