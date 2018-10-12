@@ -24,3 +24,5 @@ public:
 	~Aspirant();
 };
 
+istream& operator>>(istream& s, Aspirant &NewBoy);
+ostream& operator<<(ostream& s, Aspirant &NewBoy);

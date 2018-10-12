@@ -31,7 +31,8 @@ void main() {
 	//cout << (Petr == Ivan)<<endl;
    // cin >> Petr;
     //cout << Petr;
-    cout<<( Petr != Andrey);
+    cin >> Petr;
+    cout << Petr;
    /* Petr.Show();*/
 	//cout << "-----------------------------------" << endl;
 	//cout << Petr;

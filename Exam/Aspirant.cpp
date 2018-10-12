@@ -67,3 +67,31 @@ void Aspirant::Show()
 Aspirant::~Aspirant()
 {
 }
+
+istream & operator>>(istream & s, Aspirant & NewBoy)
+{
+
+    string FIO, EMAIL, TELEPH, VOOZ, FACULTY, DATE,THEME;
+    cin >> FIO;
+    cin >> EMAIL;
+    cin >> TELEPH;
+    cin >> VOOZ;
+    cin >> FACULTY;
+    cin >> DATE;
+    cin >> THEME;
+    NewBoy.SetName(FIO);
+    NewBoy.SetEmail(EMAIL);
+    NewBoy.SetTeleph(TELEPH);
+    NewBoy.SetVooz(VOOZ);
+    NewBoy.SetFaculty(FACULTY);
+    NewBoy.SetDate(DATE);
+    NewBoy.SetThemeDisser(THEME);
+    return s;
+}
+
+ostream & operator<<(ostream & s, Aspirant & NewBoy)
+{
+    cout << "Full name: " << NewBoy.GetName() << endl << "E-mail: " << NewBoy.GetEmail() << endl << "Telephone: " << NewBoy.GetTeleph() << endl;
+    cout << "Vooz: " << NewBoy.GetVooz() << endl << "Faculty: " << NewBoy.GetFaculty() << endl<<"Date of entering: "<<NewBoy.GetDate()<<endl<<"Theme of disser: "<< NewBoy.GetThemeDisser()<<endl;
+    return s;
+}
