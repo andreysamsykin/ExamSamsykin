@@ -69,9 +69,9 @@ bool Schoolboy::operator!=(const Schoolboy & NewBoy)
 istream & operator >> (istream& s, Schoolboy &NewBoy)
 {
 	string FIO, EMAIL, TELEPH;
-	cin >>FIO;
-	cin >> EMAIL;
-	cin >> TELEPH;
+	s >> FIO;
+	s >> EMAIL;
+	s >> TELEPH;
 	NewBoy.SetName(FIO);
 	NewBoy.SetEmail(EMAIL);
 	NewBoy.SetTeleph(TELEPH);
@@ -80,7 +80,7 @@ istream & operator >> (istream& s, Schoolboy &NewBoy)
 
 ostream & operator<<(ostream & s, Schoolboy &Newboy)
 {
-	cout << "Full name: " << Newboy.GetName() << endl << "E-mail: " << Newboy.GetEmail() << endl << "Telephone: " << Newboy.GetTeleph() << endl;
+	s << Newboy.GetName() << endl <<  Newboy.GetEmail() << endl << Newboy.GetTeleph() << endl;
 	return s;
 }
 

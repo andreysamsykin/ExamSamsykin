@@ -60,11 +60,11 @@ Student::~Student(){
 istream & operator>>(istream & s, Student & NewBoy)
 {
     string FIO, EMAIL, TELEPH,VOOZ,FACULTY;
-    cin >> FIO;
-    cin >> EMAIL;
-    cin >> TELEPH;
-    cin >> VOOZ;
-    cin >> FACULTY;
+    s >> FIO;
+    s >> EMAIL;
+    s >> TELEPH;
+    s >> VOOZ;
+    s >> FACULTY;
     NewBoy.SetName(FIO);
     NewBoy.SetEmail(EMAIL);
     NewBoy.SetTeleph(TELEPH);
@@ -75,7 +75,7 @@ istream & operator>>(istream & s, Student & NewBoy)
 
 ostream & operator<<(ostream & s, Student & NewBoy)
 {
-    cout << "Full name: " << NewBoy.GetName() << endl << "E-mail: " << NewBoy.GetEmail() << endl << "Telephone: " << NewBoy.GetTeleph() << endl;
-    cout << "Vooz: " << NewBoy.GetVooz() << endl << "Faculty: " << NewBoy.GetFaculty() << endl;
+    s <<  NewBoy.GetName() << endl <<  NewBoy.GetEmail() << endl <<  NewBoy.GetTeleph() << endl;
+    s <<  NewBoy.GetVooz() << endl <<  NewBoy.GetFaculty() << endl;
     return s;
 }

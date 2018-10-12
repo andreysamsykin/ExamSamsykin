@@ -72,13 +72,13 @@ istream & operator>>(istream & s, Aspirant & NewBoy)
 {
 
     string FIO, EMAIL, TELEPH, VOOZ, FACULTY, DATE,THEME;
-    cin >> FIO;
-    cin >> EMAIL;
-    cin >> TELEPH;
-    cin >> VOOZ;
-    cin >> FACULTY;
-    cin >> DATE;
-    cin >> THEME;
+    s >> FIO;
+    s >> EMAIL;
+    s >> TELEPH;
+    s >> VOOZ;
+    s >> FACULTY;
+    s >> DATE;
+    s >> THEME;
     NewBoy.SetName(FIO);
     NewBoy.SetEmail(EMAIL);
     NewBoy.SetTeleph(TELEPH);
@@ -91,7 +91,7 @@ istream & operator>>(istream & s, Aspirant & NewBoy)
 
 ostream & operator<<(ostream & s, Aspirant & NewBoy)
 {
-    cout << "Full name: " << NewBoy.GetName() << endl << "E-mail: " << NewBoy.GetEmail() << endl << "Telephone: " << NewBoy.GetTeleph() << endl;
-    cout << "Vooz: " << NewBoy.GetVooz() << endl << "Faculty: " << NewBoy.GetFaculty() << endl<<"Date of entering: "<<NewBoy.GetDate()<<endl<<"Theme of disser: "<< NewBoy.GetThemeDisser()<<endl;
+    s <<  NewBoy.GetName() << endl <<  NewBoy.GetEmail() << endl <<  NewBoy.GetTeleph() << endl;
+    s <<  NewBoy.GetVooz() << endl <<  NewBoy.GetFaculty() << endl<<NewBoy.GetDate()<<endl<< NewBoy.GetThemeDisser()<<endl;
     return s;
 }
