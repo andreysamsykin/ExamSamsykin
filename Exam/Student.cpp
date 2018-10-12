@@ -59,6 +59,17 @@ Student::~Student(){
 
 istream & operator>>(istream & s, Student & NewBoy)
 {
+    string FIO, EMAIL, TELEPH,VOOZ,FACULTY;
+    cin >> FIO;
+    cin >> EMAIL;
+    cin >> TELEPH;
+    cin >> VOOZ;
+    cin >> FACULTY;
+    NewBoy.SetName(FIO);
+    NewBoy.SetEmail(EMAIL);
+    NewBoy.SetTeleph(TELEPH);
+    NewBoy.SetVooz(VOOZ);
+    NewBoy.SetFaculty(FACULTY);
     return s;
 }
 

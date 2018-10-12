@@ -9,7 +9,7 @@ void main() {
 	//cout << "-----------------------------------" << endl;
 	
 	//cout << "Student: " << endl;
-	Student Petr("Petr Petrov","ksbel;","+965464665456","KhAI","RTSLA");
+    Student Petr;//("Petr Petrov","ksbel;","+965464665456","KhAI","RTSLA");
 	Student Ivan("Ivanius", "vlhadrjsvgai", "+38050504640654","Knoore","Pdkjv");
 	//Petr.Show();
 	//cout << "-----------------------------------" << endl;
@@ -22,13 +22,14 @@ void main() {
 	//Schoolboy Petr("Petr Petrov", "ksbel;", "+965464665456");
 	//Petr = Ivan;
 	//Petr.Show();
-	cout << "-----------------------------------" << endl;
-	Ivan.Show();
+	//cout << "-----------------------------------" << endl;
+	//Ivan.Show();
 	//cin >> Ivan;
 	//Ivan.ShowSchoolboy();
 	cout << "-----------------------------------" << endl;
 	/*Petr.ShowSchoolboy();*/
 	//cout << (Petr == Ivan)<<endl;
+    cin >> Petr;
     cout << Petr;
 
 	//cout << "-----------------------------------" << endl;
