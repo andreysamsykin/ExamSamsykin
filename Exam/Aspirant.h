@@ -16,6 +16,8 @@ public:
 	string GetThemeDisser();
 
     Aspirant operator=(Aspirant& NewBoy);
+    bool operator==(Aspirant& NewBoy);
+    bool operator!=(Aspirant& NewBoy);
 
 	void Show();
 

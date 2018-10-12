@@ -43,6 +43,20 @@ Aspirant Aspirant::operator=(Aspirant & NewBoy)
     return Aspirant();
 }
 
+bool Aspirant::operator==(Aspirant & NewBoy)
+{
+    if (ThemeDisser == NewBoy.GetThemeDisser() && Date == NewBoy.GetDate() && Aspirant::GetVooz() == NewBoy.GetVooz() && Aspirant::GetFaculty() == NewBoy.GetFaculty() &&
+        Aspirant::GetName() == NewBoy.GetName() && Aspirant::GetEmail() == NewBoy.GetEmail() && Aspirant::GetTeleph() == NewBoy.GetTeleph()) return true;
+    else  return false;
+}
+
+bool Aspirant::operator!=(Aspirant & NewBoy)
+{
+    if (ThemeDisser != NewBoy.GetThemeDisser() && Date != NewBoy.GetDate() && Aspirant::GetVooz() != NewBoy.GetVooz() && Aspirant::GetFaculty() != NewBoy.GetFaculty() &&
+        Aspirant::GetName() != NewBoy.GetName() && Aspirant::GetEmail() != NewBoy.GetEmail() && Aspirant::GetTeleph() != NewBoy.GetTeleph()) return true;
+    else  return false;
+}
+
 void Aspirant::Show()
 {
 	Student::Show();
