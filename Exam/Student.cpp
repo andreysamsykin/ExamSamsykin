@@ -37,7 +37,14 @@ Student Student::operator=(Student & NewBoy)
 
 bool Student::operator==(Student & NewBoy)
 {
-    return false;
+    if (Vooz == NewBoy.Vooz && Faculty == NewBoy.Faculty && Student::GetName() == NewBoy.GetName() && Student::GetEmail() == NewBoy.GetEmail() && Student::GetTeleph() == NewBoy.GetTeleph())  return true;
+    else return false;
+}
+
+bool Student::operator!=(Student & NewBoy)
+{
+    if (Vooz != NewBoy.Vooz && Faculty != NewBoy.Faculty && Student::GetName() != NewBoy.GetName() && Student::GetEmail() != NewBoy.GetEmail() && Student::GetTeleph() != NewBoy.GetTeleph())  return true;
+    else return false;
 }
 
 

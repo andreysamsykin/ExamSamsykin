@@ -20,18 +20,18 @@ void main() {
 	//cout << "-----------------------------------" << endl;
 
 	//Schoolboy Petr("Petr Petrov", "ksbel;", "+965464665456");
-	Petr = Ivan;
-	Petr.Show();
+	//Petr = Ivan;
+	//Petr.Show();
 	cout << "-----------------------------------" << endl;
 	Ivan.Show();
 	//cin >> Ivan;
 	//Ivan.ShowSchoolboy();
 	cout << "-----------------------------------" << endl;
-	/*Petr.ShowSchoolboy();
-	cout << (Petr != Ivan)<<endl;*/
+	/*Petr.ShowSchoolboy();*/
+	cout << (Petr == Ivan)<<endl;
 
 	//cout << "-----------------------------------" << endl;
 	//cout << Petr;
-    cout << "gnieifw;ngaeiufnbaveijvabenv;aieubt;pieasbtwgivhgbnsvlaietbveuilsgaehvi;";
+
 	system("pause");
 }

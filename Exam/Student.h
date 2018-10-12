@@ -17,6 +17,7 @@ public:
 
 	Student operator=( Student& NewBoy);
     bool operator==(Student &NewBoy);
+    bool operator!=(Student &NewBoy);
 
 	void Show();
 	~Student();
