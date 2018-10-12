@@ -22,4 +22,5 @@ public:
 	void Show();
 	~Student();
 };
-
+istream& operator>>(istream& s, Student &NewBoy);
+ostream& operator<<(ostream& s, Student &NewBoy);

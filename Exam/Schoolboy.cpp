@@ -78,7 +78,7 @@ istream & operator >> (istream& s, Schoolboy &NewBoy)
 	return s;
 }
 
-ostream & operator<<(ostream & s, Schoolboy & Newboy)
+ostream & operator<<(ostream & s, Schoolboy &Newboy)
 {
 	cout << "Full name: " << Newboy.GetName() << endl << "E-mail: " << Newboy.GetEmail() << endl << "Telephone: " << Newboy.GetTeleph() << endl;
 	return s;

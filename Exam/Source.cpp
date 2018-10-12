@@ -28,7 +28,8 @@ void main() {
 	//Ivan.ShowSchoolboy();
 	cout << "-----------------------------------" << endl;
 	/*Petr.ShowSchoolboy();*/
-	cout << (Petr == Ivan)<<endl;
+	//cout << (Petr == Ivan)<<endl;
+    cout << Petr;
 
 	//cout << "-----------------------------------" << endl;
 	//cout << Petr;

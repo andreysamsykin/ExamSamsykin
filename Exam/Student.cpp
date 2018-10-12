@@ -14,7 +14,7 @@ void Student::SetVooz(const string AVooz){
 }
 
 string Student::GetVooz(){
-	return string();
+	return Vooz;
 }
 
 void Student::SetFaculty(const string AFaculty){
@@ -22,7 +22,7 @@ void Student::SetFaculty(const string AFaculty){
 }
 
 string Student::GetFaculty(){
-	return string();
+	return Faculty;
 }
 
 Student Student::operator=(Student & NewBoy)
@@ -55,4 +55,16 @@ void Student::Show(){
 }
 
 Student::~Student(){
+}
+
+istream & operator>>(istream & s, Student & NewBoy)
+{
+    return s;
+}
+
+ostream & operator<<(ostream & s, Student & NewBoy)
+{
+    cout << "Full name: " << NewBoy.GetName() << endl << "E-mail: " << NewBoy.GetEmail() << endl << "Telephone: " << NewBoy.GetTeleph() << endl;
+    cout << "Vooz: " << NewBoy.GetVooz() << endl << "Faculty: " << NewBoy.GetFaculty() << endl;
+    return s;
 }
